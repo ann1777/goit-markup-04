@@ -329,8 +329,8 @@ ul.container.features {
 
 .icn-container > .icon {
     position: absolute;
-    width: auto;
-    height: auto;
+    /* width: 40px; */
+    /* height: 40px; */
 /* Inside auto layout */
     flex: none;
     order: 0;
