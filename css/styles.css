@@ -79,9 +79,8 @@ ul {
   margin: 0; 
 }
 
-/** Reset extra spases around imgs */
+/** Reset extra spases around imgs and set max-wudth */
 img {
-    display: block;
     display: block;
     max-width: 100%;
     height: auto;
@@ -317,6 +316,27 @@ ul.container.features {
     padding-bottom: calc(3.25 * var(--padding-gap));
     /* outline: 1px solid teal; */
 }
+
+.icn-container {
+    width: 264px;
+    height: 112px;
+    left: 0px;
+    top: 0px;
+    /* padding: 10%; */
+    background: #F4F4FD;
+    border-radius: 4px;
+}
+
+.icn-container > .icon {
+    position: absolute;
+    width: auto;
+    height: auto;
+/* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
 
 .container.imgs,
 .rows-container {
