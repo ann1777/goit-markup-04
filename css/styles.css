@@ -233,7 +233,7 @@ body {
     background-image: url(".././img/group-people-working-website-template.jpg");
  }
 
- .footer .container {
+ .footer.container {
     width: var(--page-width);
     background-color: var(--dark-background-color);
  }
@@ -374,8 +374,8 @@ ul.container.team {
     flex-basis: calc(100% /3);
 } */
 
-/** Our team section */
-.section-team.page-container {
+/**----------- Our team section------------- */
+.container.team {
     background-color: var(--white-title-text-color);
 }
 
@@ -438,6 +438,45 @@ p.content.type {
     font-size: var(--regular-font-size);
     line-height: var(--header3-line-height);
     color: var(--text-color);
+}
+
+/**-------------CUSTOMERS SECTION--------------*/
+.container.customers-logos {
+    background-color: var(--white-title-text-color);
+}
+
+.h2header.customers.centred { 
+    align-content: center;
+    padding-top: calc(5 * var(--padding-gap));
+    margin-bottom: calc(3 * var(--padding-gap));
+}
+
+.customers-logos.list { 
+    align-items: center; 
+    width: 168px;
+    height: 88px;
+    flex: none;
+    order: 0;
+    flex-grow: 0; 
+    background-color: var(--primary-white-color);
+}
+
+.customers-item {
+    width: 64px;
+    height: 64px;
+    left: 0px;
+    top: 0px;
+    /* padding: 10%; */
+    background: #F4F4FD;
+    border-radius: 4px;
+}
+
+.customers-item > .icon {
+    position: absolute;
+/* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
 /** Logo footer */
