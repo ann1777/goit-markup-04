@@ -245,7 +245,11 @@ body {
  .hero-img .container {
     width: var(--page-width);
     height: var(--hero-height);
-    background: rgba(46, 47, 66, 0.7);
+    /* background: rgba(46, 47, 66, 0.7);г */
+    background-color: black;
+    opacity: 0.9;
+    background-size: cover;
+    background-position: center;
     background-image: url(".././img/group-people-working-website-template.jpg");
  }
 
