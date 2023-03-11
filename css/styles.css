@@ -245,9 +245,9 @@ body {
  .hero-img .container {
     width: var(--page-width);
     height: var(--hero-height);
-    /* background: rgba(46, 47, 66, 0.7);г */
-    background-color: black;
-    opacity: 0.9;
+    background: rgba(46, 47, 66, 0.7);г
+    /* background-color: black; */
+    /* opacity: 0.9; */
     background-size: cover;
     background-position: center;
     background-image: url(".././img/group-people-working-website-template.jpg");
@@ -323,24 +323,27 @@ ul.container.features {
     /* outline: 1px solid teal; */
 }
 
-.icn-container {
-    width: 264px;
-    height: 112px;
-    left: 0px;
-    top: 0px;
+.media-icns > .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
     /* padding: 10%; */
-    background: #F4F4FD;
-    border-radius: 4px;
+    background: var(--accent-text-color);
+    border-radius: 50px;
 }
 
-.icn-container > .icon {
-    position: absolute;
-    /* width: 40px; */
-    /* height: 40px; */
-/* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+.section-team .icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+    width: 232px;
+    height: 40px;
+    fill:#E5E5E5;
 }
 
 .container.imgs,
