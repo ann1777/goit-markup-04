@@ -218,6 +218,17 @@ header {
     color: var(--btn-active-color);
 }
 
+.nav:hover::after {
+    content: "";
+    position: absolute;
+    display:block;
+    height: 2px;
+    /* width: calc(100%); */
+    border-bottom: 4px solid #404BBF;
+    padding: 12px 0;
+    width: 68px;
+}
+
 .contacts.list > ul {
     display:flex;
     justify-content: space-between;
