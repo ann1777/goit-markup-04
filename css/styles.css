@@ -346,6 +346,11 @@ li.feature.list:last-child {
 .feature-content { 
     color: var(--text-color);
     line-height: 1.5;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #434455;
 }
 
 /**FEATURE SECTION ICONS*/
@@ -472,8 +477,9 @@ ul.media-icns {
 
 /**-------------CUSTOMERS SECTION--------------*/
 
-.customers-container {
-    padding: 120px 158px 216px;
+.customers .container {
+    padding: 120px 0px;
+    align-items: center;
 }
 
 /**CUSTOMERS SECTION ICONS*/
