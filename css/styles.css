@@ -207,6 +207,7 @@ header {
 
 .nav{
     display:block;
+    position: relative;
     padding-top: var(--padding-gap);
     padding-bottom: var(--padding-gap);
     text-decoration: none;
@@ -226,7 +227,7 @@ header {
     /* width: calc(100%); */
     border-bottom: 4px solid #404BBF;
     padding: 12px 0;
-    width: 68px;
+    width: 100%;
 }
 
 .contacts.list > ul {
