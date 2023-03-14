@@ -255,6 +255,7 @@ header {
  }
 
  .hero-img {
+    width: var(--page-width);
     margin: auto;
     align-content: center;
     padding: var(--hero-container-gap) 0;
