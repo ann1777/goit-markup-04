@@ -349,7 +349,7 @@ li.feature.list:last-child {
 
 .feature-icn-box:hover,
 .feature-icn-box:focus {
-    outline: 1px solid var(--btn-active-color);
+    outline: 1px solid var(--accent-text-color);
 }
 
 /**--------WHAT ARE WE DOING SECTION----------*/
@@ -425,10 +425,20 @@ ul.media-icns {
     height: 40px;
     background: var(--accent-text-color);
     border-radius: 50px;
+    border: 2px solid transparent;
+
 }
 
-.media-icns > .team-media:hover {
+.team-media:hover,
+.team-media:focus {
     background: var(--btn-active-color);
+    border-color: #31DDAA;
+}
+
+.media-icns > .item:hover,
+.media-icns > .item:focus {
+    /* border-color: var(--btn-active-color); */
+    border-color: #31DDAA;
 }
 
 .section-team .icon {
