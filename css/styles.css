@@ -429,17 +429,6 @@ ul.media-icns {
 
 }
 
-.team-media:hover,
-.team-media:focus {
-    background: var(--btn-active-color);
-    border-color: var(--accent-text-color);
-}
-
-.media-icns > .item:hover,
-.media-icns > .item:focus {
-    border-color: var(--btn-active-color);
-}
-
 .section-team .icon {
     display: flex;
     flex-direction: row;
@@ -560,47 +549,24 @@ svg.customers-icon {
     line-height: var(--header3-line-height);
 }
 
-a.footer-media {
+.footer-media {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 100%;
+    width: 40px;
+    height: 40px;
     background-color: rgba(243, 243, 251, 0.1);
-    border-radius: 50px;
+    border: 1px solid transparent;
+    border-radius: 50%
 }  
 
-a.footer-media:is(:hover, :focus) {
-    background-color: var(--success-color);
+svg.footer-icon > use {
+    width: 24px;
+    height: 24px;
 }
 
 .media-icon {
     fill:#fff;
-}
-
-.footer-media-icns > .footer-item {
-    width: 40px;
-    height: 40px;
-}
-
-.footer .footer-icon {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    gap: 24px;
-    width: 232px;
-    height: 40px;
-    fill:#E5E5E5;
-}
-
-.footer-media-icns {
-    width: 280px;
-    height: 40px;
-    display: flex;
-    gap: 24px;
-    line-height: var(--footer-logo-line-height);
 }
 
 .footer-media-header {
@@ -612,6 +578,26 @@ a.footer-media:is(:hover, :focus) {
     letter-spacing: 0.02em;
     color: var(--white-text-color);
     font-family: 'Roboto';
+}
+
+.footer .footer-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+    width: 24px;
+    height: 24px;
+    fill:#E5E5E5;
+}
+
+.footer-media-icns {
+    width: 280px;
+    height: 40px;
+    display: flex;
+    gap: 24px;
+    line-height: var(--footer-logo-line-height);
 }
 
 /**----------------- PORTFOLIO PAGE ---------------*/
@@ -634,8 +620,6 @@ a.footer-media:is(:hover, :focus) {
     padding: calc(var(--padding-gap)/2) var(--padding-gap);
     font-size: var(--regular-font-size); 
     font-weight: 500;  
-    border: 1px solid;
-    border-top: 4px;
     background: var(--white-background-color);
     border: 1px solid var(--white-text-color);
     border-radius: 4px;
@@ -647,7 +631,6 @@ a.footer-media:is(:hover, :focus) {
 .filters:is(:focus, :hover) {
     background-color: var(--btn-active-color);
     color: var(--primary-white-color);
-    border: 4px solid var(--white-text-color);
 }
 
 .filters:active {
