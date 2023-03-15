@@ -644,13 +644,12 @@ svg.footer-icon > use {
     gap: 48px 24px;
 }
 
-.rows .card-item {
+.card-item {
     width: 360px;
-    height: 420px;
     background: var(--primary-white-color);
 }
 
-.rows .card-item:hover {
+.card-item:hover {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
@@ -669,4 +668,12 @@ svg.footer-icon > use {
     font-size: var(--header3-font-size);
     font-weight: var(--header3-font-weight);
     color: var(--title-text-color);
+}
+
+
+
+.card-box:is(:hover, :focus) .card-box {
+    border: 1px solid #F4F4FD;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
+
 }
