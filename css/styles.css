@@ -425,20 +425,19 @@ ul.media-icns {
     height: 40px;
     background: var(--accent-text-color);
     border-radius: 50px;
-    border: 2px solid transparent;
+    border: 3px solid transparent;
 
 }
 
 .team-media:hover,
 .team-media:focus {
     background: var(--btn-active-color);
-    border-color: #31DDAA;
+    border-color: var(--accent-text-color);
 }
 
 .media-icns > .item:hover,
 .media-icns > .item:focus {
-    /* border-color: var(--btn-active-color); */
-    border-color: #31DDAA;
+    border-color: var(--btn-active-color);
 }
 
 .section-team .icon {
