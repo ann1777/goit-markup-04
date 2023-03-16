@@ -426,15 +426,8 @@ ul.media-icns {
 }
 
 .media-icns > .item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 40px;
     height: 40px;
-    background: var(--accent-text-color);
-    border-radius: 50px;
-    border: 3px solid transparent;
-
 }
 
 .section-team .icon {
@@ -450,16 +443,20 @@ ul.media-icns {
 }
 
 .team-media {
-    width: 16px;
-    height: 16px;
+    width: 100%;
+    height: 100%;
     display: flex;
-    text-align: center;
-    fill: var(--white-title-text-color);
+    align-items: center;
+    justify-content: center;
+    background: var(--accent-text-color);
+    border-radius: 50px;
+    border: 3px solid transparent;
 }
 
-.team-media:hover,
-.media-icns > .item:hover {
+.team-media:is(:hover, :focus) {
     background-color: var(--btn-active-color);
+    border-color: var(--btn-active-color);
+    outline: none;
 }
 
 /**-------------CUSTOMERS SECTION--------------*/
@@ -495,7 +492,8 @@ ul.media-icns {
 
 .customers-item:hover,
 .customers-item:focus {
-    outline: 1px solid var(--btn-active-color);
+    outline: none;
+    border: 1px solid var(--btn-active-color);
 }
 
 /**CUSTOMERS SECTION ICONS*/
@@ -503,6 +501,11 @@ svg.customers-icon:hover,
 svg.customers-icon:focus {
     fill: var(--btn-active-color);
 }
+
+.customers-item:is(:hover, :focus) > .customers-icon {
+    fill: var(--btn-active-color);
+}
+
 
 .customers-item > .icon {
     width: 168px;
@@ -582,8 +585,10 @@ svg.footer-icon > use {
     fill:#fff;
 }
 
-.footer-media:hover {
+.footer-media:is(:hover, :focus) {
     background-color: var(--success-color);
+    border-color: var(--success-color);
+    outline: none;
 }
 
 .footer-media-header {
