@@ -198,9 +198,10 @@ header {
     display:flex;
     margin-left: 76px;
     padding-left: 0px;
+    gap: 40px;
 }
 
-.menu-nav > .item:not(:first-child) {
+.menu-nav > .item:first-child {
     margin-left: 40px;
 } 
 
@@ -505,7 +506,6 @@ svg.customers-icon:focus {
 .customers-item:is(:hover, :focus) > .customers-icon {
     fill: var(--btn-active-color);
 }
-
 
 .customers-item > .icon {
     width: 168px;
