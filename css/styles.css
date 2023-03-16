@@ -273,7 +273,8 @@ header {
     line-height: var(--text-line-height);
     font-weight: 500;
     font-size: 16px;
-    border: none; 
+    outline: none;
+    border: 1px solid var(--accent-text-color); 
 }
 
 .hero-btn:is(:hover, :focus) {
