@@ -196,13 +196,9 @@ header {
 /** Top line Menu nav */
 .menu-nav.list{
     display:flex;
-    margin-left: 76px;
+    margin-left: 116px;
     padding-left: 0px;
     gap: 40px;
-}
-
-.menu-nav > .item:first-child {
-    margin-left: 40px;
 } 
 
 .nav{
@@ -265,6 +261,7 @@ header {
     display: block;
     margin: 0 auto;
     min-width: 169px;
+    letter-spacing: 0.04em;
     height: 56px;
     border-radius: 4px;
     padding: 16px 32px;
@@ -335,48 +332,12 @@ li.feature.list:last-child {
     height: 112px;
     margin-bottom: 8px;
     background-color: #F4F4FD;
-    border-radius: 4px solid #F4F4FD;
-}
-
-/* .feature-icn-box:is(:hover, :focus) .feature-icn:is(:hover, :focus), */
-.feature-icn-box:hover .feature-icn,
-.feature-icn-box:focus .feature-icn {
-    fill: var(--accent-text-color);
-    border-radius: 4px solid var(--accent-text-color);
-}
-
-.feature-icn:is(:hover, :focus) { 
-    fill: var(--accent-text-color);
-}
-.feature-icn:is(:hover, :focus) { 
-    fill: var(--accent-text-color);
-}
-
-.feature-icn-box:hover,
-.feature-icn-box:focus {
-    outline: 1px solid var(--accent-text-color);
-}
-
-.feature-icn-box:hover,
-.feature-icn-box:focus {
-    outline: 1px solid var(--accent-text-color);
+    border-radius: 4px;
 }
 
 /**--------WHAT ARE WE DOING SECTION----------*/
 .information {
     padding-top: 0;
-}
-
-.information-item {
-    box-sizing: border-box;
-    width: 360px;
-    height: 300px;
-    background: #F4F4FD;
-    border: 1px solid #E7E9FC;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    border-radius: 4px;
 }
 
 
@@ -395,12 +356,13 @@ li.feature.list:last-child {
 }
 
 .team-items{
-    padding: 32px 0; 
+    padding: 32px 0 0; 
+    margin-bottom: 32px;
     text-align: center;
 }
 
 .team-icon {
-    fill: var(--icons-fill-color);
+    fill: #fff;
 }
 
 ul.card-content.list li {
@@ -416,6 +378,7 @@ ul.card-content.list li {
 }
 
 .teamplayers-position {
+    margin-bottom: 8px;
     line-height: 1.5;
     color: var(--text-color);
 }
@@ -423,7 +386,6 @@ ul.card-content.list li {
 /**OUR TEAM SECTION ICONS*/
 
 ul.media-icns {
-    padding-bottom: 32px;
     display: flex;
     justify-content: space-around;
 }
@@ -453,7 +415,6 @@ ul.media-icns {
     justify-content: center;
     background: var(--accent-text-color);
     border-radius: 50px;
-    border: 3px solid transparent;
 }
 
 .team-media:is(:hover, :focus) {
@@ -464,22 +425,27 @@ ul.media-icns {
 
 /**-------------CUSTOMERS SECTION--------------*/
 
-.customers .container {
+.customers {
     padding: 120px 0px;
+}
+
+.customers .container {
     align-items: center;
 }
 
 .customers-logos.list { 
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 72px;
-    width: var(--content-width);
     gap: 24px;
+}
+
+.customers-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 168px;
     height: 88px;
-    order: 0;
-    flex-grow: 0; 
-    background-color: var(--primary-white-color);
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
 }
 
 .customers-card {
@@ -493,19 +459,13 @@ ul.media-icns {
     border-radius: 4px;
 }
 
-.customers-item:hover,
-.customers-item:focus {
+.customers-item:is(:hover, :focus) {
     outline: none;
     border: 1px solid var(--btn-active-color);
 }
 
 /**CUSTOMERS SECTION ICONS*/
-svg.customers-icon:hover,
-svg.customers-icon:focus {
-    fill: var(--btn-active-color);
-}
-
-.customers-item:is(:hover, :focus) > .customers-icon {
+.customers-item:is(:hover, :focus) .customers-icon {
     fill: var(--btn-active-color);
 }
 
@@ -518,15 +478,15 @@ svg.customers-icon:focus {
 }
 
 svg.customers-icon {
-    display:block;
-    text-align: center;
-    min-width: 104px;
-    min-height: 56px;
+    /* display:block; */
+    /* text-align: center; */
+    /* min-width: 104px; */
+    /* min-height: 56px; */
     fill:#8E8F99;
-    padding: 16px 32px;
-    width: 100%;
-    height: 100%;
-    background: var(--white-background-color);
+    /* padding: 16px 32px; */
+    /* width: 100%; */
+    /* height: 100%; */
+    /* background: var(--white-background-color); */
 }
 
 /**------------------FOOTER SECTION--------------- */
@@ -537,35 +497,30 @@ svg.customers-icon {
 
 .footer .container {
     display: flex;
-    gap: 120px;
+    align-items: baseline;
+   /*  gap: 120px; */
 }
 
-.logo-box {
-    height: 110px;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-}
+/* .logo-box { */
+    /* height: 110px; */
+    /* padding-bottom: 0px; */
+    /* margin-bottom: 0px; */
+/* } */
 
 .footer-content {
     margin-top: 16px;
     width: var(--footer-content-width);
     color: var(--white-text-color);
-    line-height: var(--header3-line-height);
+    line-height: 1.5;
 }
 
 /**PAGE FOOTER ICONS*/
 
 .footer-media-box {
-    padding-bottom: 0px;
-    margin-bottom: 0px;
+    margin-left: 120px;
+    /* padding-bottom: 0px; */
+    /* margin-bottom: 0px; */
 } 
-
-.footer-content {
-    margin-top: 16px;
-    width: var(--footer-content-width);
-    color: var(--white-text-color);
-    line-height: var(--header3-line-height);
-}
 
 .footer-media {
     display: flex;
@@ -573,8 +528,8 @@ svg.customers-icon {
     justify-content: center;
     width: 40px;
     height: 40px;
-    background-color: rgba(243, 243, 251, 0.1);
-    border: 1px solid transparent;
+    background-color: rgba(255, 255, 255, 0.1);
+    /* border: 1px solid transparent; */
     border-radius: 50%
 }  
 
@@ -595,13 +550,10 @@ svg.footer-icon > use {
 
 .footer-media-header {
     margin-bottom: 16px;
-    font-family: 'Roboto';
     font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--white-text-color);
-    font-family: 'Roboto';
 }
 
 .footer .footer-icon {
@@ -617,11 +569,8 @@ svg.footer-icon > use {
 }
 
 .footer-media-icns {
-    width: 280px;
-    height: 40px;
     display: flex;
     gap: 24px;
-    line-height: var(--footer-logo-line-height);
 }
 
 /**----------------- PORTFOLIO PAGE ---------------*/
