@@ -231,10 +231,6 @@ header {
     text-decoration: none;
 }
 
-.contacts > .item:not(:first-child) {
-    margin-left: 40px;
-}
-
 /**--------HERO SECTION---------*/
   /** HERO-img container */
  .hero-img {
