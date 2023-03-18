@@ -26,7 +26,7 @@
     /**Dairy - Modal background */
     --modal-bg-color: #FCFCFC;
 
-    --icons-fill-color: #E5E5E5;
+    --icons-fill-color: #fff;
 
     --cutomers-logo-fill-color: #8e8f99;
     
@@ -362,7 +362,7 @@ li.feature.list:last-child {
 }
 
 .team-icon {
-    fill: #fff;
+    fill: var(--icons-fill-color);
 }
 
 ul.card-content.list li {
@@ -498,14 +498,7 @@ svg.customers-icon {
 .footer .container {
     display: flex;
     align-items: baseline;
-   /*  gap: 120px; */
 }
-
-/* .logo-box { */
-    /* height: 110px; */
-    /* padding-bottom: 0px; */
-    /* margin-bottom: 0px; */
-/* } */
 
 .footer-content {
     margin-top: 16px;
@@ -539,7 +532,7 @@ svg.footer-icon > use {
 }
 
 .media-icon {
-    fill:#fff;
+    fill: var(--icons-fill-color);
 }
 
 .footer-media:is(:hover, :focus) {
@@ -557,15 +550,7 @@ svg.footer-icon > use {
 }
 
 .footer .footer-icon {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    gap: 24px;
-    width: 24px;
-    height: 24px;
-    fill:#E5E5E5;
+    fill: var(--icons-fill-color);
 }
 
 .footer-media-icns {
@@ -592,7 +577,8 @@ svg.footer-icon > use {
     height: 48px;
     padding: calc(var(--padding-gap)/2) var(--padding-gap);
     font-size: var(--regular-font-size); 
-    font-weight: 500;  
+    font-weight: 500;
+    letter-spacing: 0.02em;  
     background: var(--white-background-color);
     border: 1px solid var(--white-text-color);
     border-radius: 4px;
@@ -618,7 +604,6 @@ svg.footer-icon > use {
 }
 
 .card-item {
-    width: 360px;
     background: var(--primary-white-color);
 }
 
