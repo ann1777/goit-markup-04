@@ -196,7 +196,7 @@ header {
 /** Top line Menu nav */
 .menu-nav.list{
     display:flex;
-    margin-left: 116px;
+    margin-left: 76px;
     padding-left: 0px;
     gap: 40px;
 } 
@@ -352,8 +352,7 @@ li.feature.list:last-child {
 }
 
 .team-items{
-    padding: 32px 0 0; 
-    margin-bottom: 32px;
+    padding: 32px 0;
     text-align: center;
 }
 
@@ -425,10 +424,6 @@ ul.media-icns {
     padding: 120px 0px;
 }
 
-.customers .container {
-    align-items: center;
-}
-
 .customers-logos.list { 
     display: flex;
     gap: 24px;
@@ -436,17 +431,6 @@ ul.media-icns {
 
 .customers-item {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 168px;
-    height: 88px;
-    border: 1px solid #8E8F99;
-    border-radius: 4px;
-}
-
-.customers-card {
-    display: flex;
-    margin: auto;
     align-items: center;
     justify-content: center;
     width: 168px;
@@ -507,14 +491,9 @@ svg.customers-icon {
     justify-content: center;
     width: 40px;
     height: 40px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%
+    background-color: rgba(256, 256, 256, 0.1);
+    border-radius: 50%;
 }  
-
-svg.footer-icon > use {
-    width: 24px;
-    height: 24px;
-}
 
 .media-icon {
     fill: var(--icons-fill-color);
