@@ -458,7 +458,7 @@ ul.media-icns {
 }
 
 svg.customers-icon {
-    fill: #var(--cutomers-logo-fill-color);
+    fill: var(--cutomers-logo-fill-color);
 }
 
 /**------------------FOOTER SECTION--------------- */
