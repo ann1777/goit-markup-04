@@ -447,7 +447,7 @@ ul.media-icns {
 
 /**CUSTOMERS SECTION ICONS*/
 .customers-item:is(:hover, :focus) .customers-icon {
-    fill: var(--btn-active-color);--white-title-text-color:#F4F4FD;
+    fill: var(--btn-active-color);
 }
 
 .customers-item > .icon {
