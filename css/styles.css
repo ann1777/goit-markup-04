@@ -327,7 +327,7 @@ li.feature.list:last-child {
     justify-content: center;
     height: 112px;
     margin-bottom: 8px;
-    background-color: #F4F4FD;
+    background-color: (--white-background-color);
     border-radius: 4px;
 }
 
@@ -435,7 +435,7 @@ ul.media-icns {
     justify-content: center;
     width: 168px;
     height: 88px;
-    border: 1px solid #8E8F99;
+    border: 1px solid var(--cutomers-logo-fill-color);
     border-radius: 4px;
 }
 
@@ -446,7 +446,7 @@ ul.media-icns {
 
 /**CUSTOMERS SECTION ICONS*/
 .customers-item:is(:hover, :focus) .customers-icon {
-    fill: var(--btn-active-color);
+    fill: var(--btn-active-color);--white-title-text-color:#F4F4FD;
 }
 
 .customers-item > .icon {
@@ -458,7 +458,7 @@ ul.media-icns {
 }
 
 svg.customers-icon {
-    fill:#8E8F99;
+    fill: #var(--cutomers-logo-fill-color);
 }
 
 /**------------------FOOTER SECTION--------------- */
@@ -595,6 +595,6 @@ svg.customers-icon {
 
 
 .card-box:is(:hover, :focus) .card-box {
-    border: 1px solid #F4F4FD;
+    border: 1px solid (--white-title-text-color);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
 }
