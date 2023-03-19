@@ -456,7 +456,6 @@ ul.media-icns {
     flex-grow: 0;
     fill: var(--helper-text-color);
 }
-
 svg.customers-icon {
     fill: var(--cutomers-logo-fill-color);
 }
